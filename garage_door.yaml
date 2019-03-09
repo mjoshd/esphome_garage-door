@@ -52,7 +52,7 @@ cover:
     name: ${friendly_name}
     id: ${device_name}
     lambda: |-
-      if (id(${device_name}_sensor).state) {
+      if (id(sensor).state) {
         return cover::COVER_OPEN;
       } else {
         return cover::COVER_CLOSED;
